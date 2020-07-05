@@ -281,6 +281,7 @@ public class MyDataBoard<E extends Data> implements DataBoard<E> {
             throw new InvalidPasswordException("Passw sbagliata");
         if (dataList.isEmpty() == true) // Non ci sono elementi nella bacheca
             return null;
+        ArrayList<E> allData = new ArrayList<>(dataList);
         
     }
 
